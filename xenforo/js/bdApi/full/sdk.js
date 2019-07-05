@@ -20,7 +20,7 @@
             },
 
             isAuthorized: function (scope, callback) {
-                // callback = function(isAuthorized, apiData) {};
+                 callback = function(isAuthorized, apiData) {};
                 $.ajax({
                     data: {
                         'cmd': 'authorized',
@@ -46,7 +46,7 @@
             },
 
             request: function (route, callback, accessToken, method, data) {
-                // callback = function(apiData) {};
+                 callback = function(apiData) {};
                 var uri = requestBaseUri + '?' + route + '&_xfResponseType=jsonp';
 
                 var ajaxOptions = {
